@@ -1636,3 +1636,13 @@ body.mobile-nav-active .nav-menu a {
     width: 100% !important; /* make link take full menu width */
 }
 
+/* Push page content when sidebar is open (desktop) */
+@media (min-width: 992px) {
+  body.mobile-nav-active main,
+  body.mobile-nav-active #hero,
+  body.mobile-nav-active section {
+    margin-left: 320px; /* MUST match sidebar width */
+  }
+}
+
+
