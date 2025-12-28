@@ -91,6 +91,13 @@ h6 {
   color: #0563bb;
 }
 
+.mobile-nav-toggle {
+  font-size: 28px;       /* Make icon visible */
+  color: #0d6efd;        /* Blue color (matches portfolio theme) */
+  z-index: 999;           /* Make sure it's above other elements */
+  cursor: pointer;        /* Pointer on hover */
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
