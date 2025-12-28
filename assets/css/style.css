@@ -1580,6 +1580,17 @@ section {
   font-size: 13px;
 }
 
+@media (min-width: 992px) {
+  body.mobile-nav-active .nav-menu a span {
+    display: inline-block !important;
+    color: #45505b; /* adjust text color */
+  }
+
+  body.mobile-nav-active .nav-menu a {
+    width: 250px !important; /* expand full width */
+  }
+}
+
 /* Show full mobile menu when hamburger is active, on all screen sizes */
 body.mobile-nav-active #header {
     width: 250px !important; /* adjust width as needed */
