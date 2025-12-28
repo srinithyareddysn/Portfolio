@@ -1591,6 +1591,20 @@ section {
   }
 }
 
+/* Remove white blocks behind nav items on desktop when hamburger is open */
+@media (min-width: 992px) {
+  body.mobile-nav-active .nav-menu a {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body.mobile-nav-active .nav-menu a:hover,
+  body.mobile-nav-active .nav-menu a.active {
+    background: rgba(5, 99, 187, 0.15) !important; /* soft blue hover */
+  }
+}
+
+
 /* Show full mobile menu when hamburger is active, on all screen sizes */
 body.mobile-nav-active #header {
     width: 250px !important; /* adjust width as needed */
