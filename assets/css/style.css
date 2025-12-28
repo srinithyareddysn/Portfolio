@@ -1305,56 +1305,29 @@ section {
     color: #fff;
   }
 }
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.skills .progress {
-  height: 40px; /* slightly smaller for mobile */
-  background: #f2f3f5;
-  border-radius: 25px;
-  margin-bottom: 20px;
-}
-
-.skills .progress .skill {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 15px;
-  font-weight: 600;
-  color: #45505b;
-  font-family: "Poppins", sans-serif;
-}
-
-.skills .progress .skill .val {
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: #f2f3f5;
-  border-radius: 25px;
-  overflow: hidden;
-}
-
-.skills .progress-bar {
-  width: 0; /* animated via JS */
-  height: 100%;
-  background-color: #0563bb;
-  transition: width 1s ease-in-out;
-}
-
-/* Mobile fix */
-@media (max-width: 768px) {
-  .skills .progress {
-    height: 35px;
+/* =======================
+   Responsive Adjustments
+======================= */
+@media (max-width: 991px) {
+  .contact .info {
+    flex-direction: column;
   }
-  .skills .progress .skill {
-    font-size: 14px;
-    padding: 5px 10px;
+  .contact .info div {
+    width: 100%;
   }
 }
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
+
+@media (max-width: 576px) {
+  .contact form {
+    padding: 20px;
+  }
+  .contact .info i,
+  .contact .info span {
+    font-size: 24px;
+    min-width: 30px;
+  }
+}
+
 .contact .info {
   width: 100%;
   background: #fff;
@@ -1489,4 +1462,3 @@ section {
     transform: rotate(360deg);
   }
 }
-
