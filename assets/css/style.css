@@ -1579,3 +1579,17 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/* Show full mobile menu when hamburger is active, on all screen sizes */
+body.mobile-nav-active #header {
+    width: 250px !important; /* adjust width as needed */
+}
+
+body.mobile-nav-active .nav-menu a span {
+    display: inline-block !important;
+}
+
+body.mobile-nav-active .nav-menu a {
+    width: 100% !important; /* make link take full menu width */
+}
+
