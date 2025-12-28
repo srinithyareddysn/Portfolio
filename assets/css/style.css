@@ -1305,87 +1305,124 @@ section {
     color: #fff;
   }
 }
-.contact .info i {
-  float: none;
-  margin-bottom: 10px;
-}
-
-.contact .info h4,
-.contact .info p {
-  padding-left: 0;
-}
-
-@media (min-width: 768px) {
-  .contact .info i {
-    float: left;
-    width: 44px;
-    height: 44px;
-    margin-right: 15px;
-  }
-  .contact .info h4,
-  .contact .info p {
-    padding-left: 60px;
-  }
-}
-
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
 .skills .progress {
-  background: #f2f3f5;
-  border-radius: 10px;
-  height: 25px; /* thicker lines */
-  margin-bottom: 20px;
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
 }
 
 .skills .progress .skill {
+  padding: 10px 0;
+  margin: 0;
+  text-transform: uppercase;
+  display: block;
   font-weight: 600;
-  margin-bottom: 5px;
-  display: flex;
-  justify-content: space-between;
   font-family: "Poppins", sans-serif;
   color: #45505b;
 }
 
-.skills .progress-bar {
-  height: 100%;
-  background-color: #0563bb;
-  border-radius: 10px;
-  transition: width 1s ease-in-out;
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
 }
+
+.skills .progress-bar-wrap {
+  background: #f2f3f5;
+}
+
+.skills .progress-bar {
+  width: 1px; /* This can be animated via JS when the section comes into view */
+  height: 10px;
+  transition: 0.9s;
+  background-color: #0563bb;
+}
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
 .contact .info {
+  width: 100%;
   background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #0563bb;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact .info h4 {
-  font-size: 18px;
-  color: #0563bb;
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
   margin-bottom: 5px;
+  color: #45505b;
 }
 
 .contact .info p {
-  font-size: 15px;
-  color: #45505b;
-  margin: 0 0 15px 0;
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #0563bb;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
 }
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 12px 15px;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email] {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
 }
 
 .contact .php-email-form button[type=submit] {
   background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
   color: #fff;
+  transition: 0.4s;
   border-radius: 50px;
-  padding: 12px 30px;
-  transition: 0.3s;
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: #0678e3;
 }
-
