@@ -178,6 +178,24 @@ body.mobile-nav-active .nav-menu ul li a {
   text-decoration: none;
 }
 
+/* Hide menu on mobile by default */
+body:not(.mobile-nav-active) .nav-menu {
+  display: none;
+}
+
+/* Show menu when toggled */
+body.mobile-nav-active .nav-menu {
+  display: block;
+  position: absolute;
+  top: 60px; 
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 998;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
