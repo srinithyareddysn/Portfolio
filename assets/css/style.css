@@ -183,6 +183,17 @@ body:not(.mobile-nav-active) .nav-menu {
   display: none;
 }
 
+/* Show full mobile nav text on all screens when active */
+body.mobile-nav-active .nav-menu a span {
+    display: inline-block !important;
+}
+
+/* Optional: make menu wider on large screens */
+body.mobile-nav-active .nav-menu {
+    width: 250px !important; /* adjust as needed */
+}
+
+
 /* Show menu when toggled */
 body.mobile-nav-active .nav-menu {
   display: block;
