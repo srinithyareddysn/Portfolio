@@ -98,6 +98,44 @@ h6 {
   cursor: pointer;        /* Pointer on hover */
 }
 
+/* Hide menu on mobile by default */
+.nav-menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Mobile nav hidden by default */
+body:not(.mobile-nav-active) .nav-menu {
+  display: none;
+}
+
+/* Show mobile nav when toggled */
+body.mobile-nav-active .nav-menu {
+  display: block;
+  position: absolute;
+  top: 60px; /* adjust based on your header height */
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* optional */
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 998;
+}
+
+/* Style mobile nav links */
+body.mobile-nav-active .nav-menu ul li {
+  margin: 10px 0;
+}
+
+body.mobile-nav-active .nav-menu ul li a {
+  font-size: 18px;
+  color: #0d6efd;
+  text-decoration: none;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
