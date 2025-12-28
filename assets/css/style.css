@@ -125,6 +125,48 @@ body.mobile-nav-active .nav-menu {
   z-index: 998;
 }
 
+/* Mobile nav toggle */
+.mobile-nav-toggle {
+  display: block;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  z-index: 9999;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0563bb;
+}
+
+/* Hide navbar by default on mobile */
+@media (max-width: 991px) {
+  .nav-menu {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    padding-top: 60px;
+    box-shadow: 2px 0 12px rgba(0,0,0,0.1);
+    z-index: 998;
+    overflow-y: auto;
+  }
+
+  body.mobile-nav-active .nav-menu {
+    display: block;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu a span {
+    display: inline; /* show text on mobile */
+    margin-left: 10px;
+  }
+}
+
 /* Style mobile nav links */
 body.mobile-nav-active .nav-menu ul li {
   margin: 10px 0;
