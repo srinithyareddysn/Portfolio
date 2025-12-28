@@ -1282,3 +1282,14 @@ section {
   display: inline-flex; /* Show icons & text when menu open */
 }
 
+/* Hide the entire menu initially */
+.nav-menu {
+  display: none; /* completely hidden */
+}
+
+/* When hamburger is clicked (menu active) */
+.mobile-nav-active .nav-menu {
+  display: block; /* show menu */
+}
+
+
