@@ -1678,3 +1678,63 @@ body.mobile-nav-active .nav-menu a {
 
 }
 
+/* =====================================
+   FORCE SIDEBAR VISIBILITY FIX
+===================================== */
+
+/* COMMON */
+#header {
+  width: 320px !important;
+  overflow: visible !important;
+}
+
+.nav-menu,
+.nav-menu ul,
+.nav-menu ul li,
+.nav-menu ul li a {
+  width: 100% !important;
+}
+
+.nav-menu ul li a span {
+  display: inline-block !important;
+  white-space: nowrap !important;
+  overflow: visible !important;
+}
+
+/* MOBILE FIX */
+@media (max-width: 991px) {
+  #header {
+    position: fixed !important;
+    top: 0 !important;
+    left: -320px !important;
+    height: 100vh !important;
+    background: #040b14 !important;
+    transition: all 0.3s ease !important;
+    z-index: 9999 !important;
+  }
+
+  body.mobile-nav-active #header {
+    left: 0 !important;
+  }
+
+  body.mobile-nav-active main,
+  body.mobile-nav-active section,
+  body.mobile-nav-active #hero {
+    margin-left: 0 !important;
+  }
+}
+
+/* DESKTOP FIX */
+@media (min-width: 992px) {
+  #header {
+    left: 0 !important;
+  }
+
+  main,
+  #hero,
+  section {
+    margin-left: 320px !important;
+  }
+}
+
+
