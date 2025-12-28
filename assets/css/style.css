@@ -1256,3 +1256,29 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/* Desktop: Hide menu text/icons initially */
+@media (min-width: 992px) {
+  .nav-menu a span {
+    display: none; /* Hide text */
+  }
+
+  .nav-menu a i {
+    display: none; /* Hide icon as well */
+  }
+
+  #header {
+    width: 80px; /* collapsed sidebar width */
+  }
+}
+
+/* Mobile: Show menu when hamburger clicked */
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .nav-menu a span,
+.mobile-nav-active .nav-menu a i {
+  display: inline-flex; /* Show icons & text when menu open */
+}
+
