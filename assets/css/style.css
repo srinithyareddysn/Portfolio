@@ -1737,4 +1737,53 @@ body.mobile-nav-active .nav-menu a {
   }
 }
 
+/* =====================================
+   REMOVE WHITE PILLAR / ICON-ONLY COLUMN
+===================================== */
+
+/* Disable icon-only sidebar behavior */
+@media (min-width: 992px) {
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 100% !important;
+    background: #040b14 !important;
+  }
+
+  .nav-menu a span {
+    display: inline-block !important;
+    color: #fff !important;
+    margin-left: 12px !important;
+  }
+
+  .nav-menu a i {
+    color: #fff !important;
+  }
+}
+
+/* Force header full width */
+#header {
+  width: 320px !important;
+  background: #040b14 !important;
+}
+
+/* Remove any leftover overlay */
+#header::before,
+#header::after {
+  display: none !important;
+}
+
+/* Ensure menu text is never clipped */
+.nav-menu ul li a {
+  overflow: visible !important;
+  white-space: nowrap !important;
+}
+
+/* Push content properly */
+@media (min-width: 992px) {
+  #main,
+  #hero,
+  section {
+    margin-left: 320px !important;
+  }
+}
 
