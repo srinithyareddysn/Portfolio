@@ -1069,6 +1069,76 @@ section {
   }
 }
 
+/* =======================
+   Skills Section Styling
+======================= */
+.skills {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.skills .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0d6efd;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skills-content .progress {
+  margin-bottom: 25px;
+}
+
+.skills-content .skill {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+/* Progress bar track */
+.skills-content .progress-bar-wrap {
+  background-color: #e9ecef; /* Light gray track */
+  border-radius: 10px;
+  height: 10px; /* thinner bar */
+  overflow: hidden;
+}
+
+/* Progress bar fill */
+.skills-content .progress-bar {
+  background-color: #0d6efd; /* Blue fill */
+  height: 10px;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Optional: Animate bars when scrolling into view */
+.skills-content .progress-bar[aria-valuenow] {
+  width: 0;
+}
+
+.skills-content .progress-bar.active {
+  width: attr(aria-valuenow '%'); /* Sets width based on HTML attribute */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skills .section-title h2 {
+    font-size: 28px;
+  }
+  .skills-content .skill {
+    font-size: 13px;
+  }
+  .skills-content .progress-bar-wrap {
+    height: 8px;
+  }
+  .skills-content .progress-bar {
+    height: 8px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
