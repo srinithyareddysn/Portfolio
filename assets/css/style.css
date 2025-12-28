@@ -1604,6 +1604,24 @@ section {
   }
 }
 
+/* Increase sidebar width when hamburger is active */
+body.mobile-nav-active #header {
+  width: 320px !important;   /* 🔹 change to 300 / 320 / 350 as you like */
+}
+
+/* Ensure nav links take full width */
+body.mobile-nav-active .nav-menu a {
+  width: 100% !important;
+  padding: 12px 20px;
+}
+
+/* Make sure text is fully visible */
+body.mobile-nav-active .nav-menu a span {
+  display: inline-block !important;
+  white-space: nowrap; /* prevents text cutting */
+}
+
+
 
 /* Show full mobile menu when hamburger is active, on all screen sizes */
 body.mobile-nav-active #header {
