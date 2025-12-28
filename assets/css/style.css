@@ -80,6 +80,16 @@ h6 {
   display: none;
   color: green;
 }
+#hero .social-links a {
+  font-size: 28px; /* bigger icons */
+  margin-right: 20px;
+  color: #45505b;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: #0563bb;
+}
 
 
 /*--------------------------------------------------------------
